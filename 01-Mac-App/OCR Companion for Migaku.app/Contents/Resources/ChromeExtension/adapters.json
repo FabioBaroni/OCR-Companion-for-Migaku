@@ -1,0 +1,311 @@
+[
+  {
+    "name": "Kuaikan",
+    "hosts": [
+      "www.kuaikanmanhua.com",
+      "kuaikanmanhua.com"
+    ],
+    "path": "/webs/comic-next/",
+    "selector": "img.img",
+    "imageHosts": [
+      "kkmh.com"
+    ],
+    "language": "zh-Hans"
+  },
+  {
+    "name": "Webtoon",
+    "hosts": [
+      "www.webtoons.com",
+      "webtoons.com"
+    ],
+    "path": "/",
+    "selector": "#_imageList img._images",
+    "imageHosts": [
+      "pstatic.net"
+    ],
+    "language": "en-US",
+    "referrer": "https://www.webtoons.com/"
+  },
+  {
+    "name": "QQ Comics",
+    "hosts": [
+      "ac.qq.com"
+    ],
+    "path": "/ComicView/",
+    "selector": "#comicContain img[data-pid]",
+    "imageHosts": [
+      "acimg.cn"
+    ],
+    "language": "zh-Hans",
+    "referrer": "https://ac.qq.com/"
+  },
+  {
+    "name": "Baozi",
+    "hosts": [
+      "www.twbzmg.com",
+      "twbzmg.com",
+      "www.twmanga.com",
+      "twmanga.com",
+      "www.baozimh.com",
+      "baozimh.com"
+    ],
+    "path": "/comic/chapter/",
+    "selector": "amp-img img",
+    "imageHosts": [
+      "baozimh.com",
+      "bzcdn.net"
+    ],
+    "language": "zh-Hant",
+    "referrer": "https://www.twbzmg.com/"
+  },
+  {
+    "name": "Mangaben",
+    "hosts": [
+      "www.manben.com",
+      "manben.com"
+    ],
+    "path": "/m",
+    "selector": "img.indexImg",
+    "imageHosts": [
+      "cdndm5.com"
+    ],
+    "language": "zh-Hans",
+    "referrer": "page",
+    "kind": "renderedImage",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Bilibili Manga",
+    "hosts": [
+      "manga.bilibili.com"
+    ],
+    "path": "/mc",
+    "selector": ".image-container canvas",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "zh-Hans",
+    "captureOnly": true,
+    "captureHideSelectors": [
+      ".manga-reader-ui",
+      ".manga-reader > .floating-left",
+      ".manga-reader > .floating-buttons",
+      ".manga-reader > .message-box"
+    ]
+  },
+  {
+    "name": "Creative Comic",
+    "hosts": [
+      "www.creative-comic.tw",
+      "creative-comic.tw"
+    ],
+    "path": "/",
+    "selector": "canvas.pageCanvasImage",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "zh-Hant",
+    "manualNavigation": true
+  },
+  {
+    "name": "GlobalComix",
+    "hosts": [
+      "globalcomix.com",
+      "www.globalcomix.com"
+    ],
+    "path": "/read",
+    "selector": "img[src*=\"reader-cdn.globalcomix.com/r/\"]",
+    "imageHosts": [
+      "globalcomix.com"
+    ],
+    "language": "en-US",
+    "referrer": "https://globalcomix.com/"
+  },
+  {
+    "name": "Manhuahao",
+    "hosts": [
+      "www.manhuahao.com",
+      "manhuahao.com"
+    ],
+    "path": "/",
+    "selector": ".chapter-images .chapter-image img",
+    "kind": "renderedImage",
+    "imageHosts": [],
+    "language": "zh-Hans"
+  },
+  {
+    "name": "36mh",
+    "hosts": [
+      "www.36mh.org",
+      "36mh.org"
+    ],
+    "path": "/manhua/",
+    "selector": "img.lazy-read",
+    "imageHosts": [
+      "546457.xyz"
+    ],
+    "language": "zh-Hans",
+    "referrer": "https://www.36mh.org/"
+  },
+  {
+    "name": "Dumanwu",
+    "hosts": [
+      "www.dumanwu.com",
+      "dumanwu.com"
+    ],
+    "path": "/",
+    "selector": ".chapter-img-box img",
+    "imageHosts": [
+      "shimolife.com"
+    ],
+    "language": "zh-Hans",
+    "referrer": "https://www.dumanwu.com/"
+  },
+  {
+    "name": "Dongman Manhua",
+    "hosts": [
+      "www.dongmanmanhua.cn",
+      "dongmanmanhua.cn"
+    ],
+    "path": "/",
+    "selector": "#_imageList img._images",
+    "imageHosts": [
+      "dongmanmanhua.cn"
+    ],
+    "language": "zh-Hans",
+    "referrer": "https://www.dongmanmanhua.cn/"
+  },
+  {
+    "name": "Shonen Jump+",
+    "hosts": [
+      "shonenjumpplus.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Tonari no Young Jump",
+    "hosts": [
+      "tonarinoyj.jp"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Comic Days",
+    "hosts": [
+      "comic-days.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Naver Webtoon",
+    "hosts": [
+      "comic.naver.com"
+    ],
+    "pathPattern": "^/webtoon/detail/?$",
+    "queryKeys": [
+      "titleId",
+      "no"
+    ],
+    "selector": "img[alt=\"comic content\"]",
+    "kind": "renderedImage",
+    "imageHosts": [],
+    "language": "ko-KR",
+    "captureOnly": true,
+    "scrollStep": true
+  },
+  {
+    "name": "Sunday Webry",
+    "hosts": [
+      "www.sunday-webry.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Comic Gardo",
+    "hosts": [
+      "comic-gardo.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Kurage Bunch",
+    "hosts": [
+      "kuragebunch.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Comic Action",
+    "hosts": [
+      "comic-action.com"
+    ],
+    "pathPattern": "^/episode/[0-9]+/?$",
+    "selector": "canvas.page-image.js-page-image",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Magapoke",
+    "hosts": [
+      "pocket.shonenmagazine.com"
+    ],
+    "pathPattern": "^/title/[0-9]+/episode/[0-9]+/?$",
+    "selector": ".c-viewer__comic-item-image canvas",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  },
+  {
+    "name": "Kadocomi",
+    "hosts": [
+      "comic-walker.com"
+    ],
+    "pathPattern": "^/detail/KC_[A-Za-z0-9_]+/episodes/KC_[A-Za-z0-9_]+/?$",
+    "selector": "[class*=\"_pageCanvasWrapper_\"] canvas",
+    "kind": "canvas",
+    "imageHosts": [],
+    "language": "ja-JP",
+    "captureOnly": true,
+    "manualNavigation": true
+  }
+]

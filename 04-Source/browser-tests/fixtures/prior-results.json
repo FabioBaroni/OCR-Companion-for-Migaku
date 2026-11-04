@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-02",
+  "native_helper": "1.1.0",
+  "extension": "1.1.0–1.1.1 (source path unchanged; screenshot fix retested in 1.1.1)",
+  "tests": [
+    {
+      "site": "Kuaikan",
+      "chapter_url": "https://www.kuaikanmanhua.com/webs/comic-next/682699",
+      "result": "pass",
+      "method": "source page",
+      "lines": 2,
+      "seconds": 0.34,
+      "sample": "这不是我之前拒绝过的富二代么！",
+      "notes": "Verified native source OCR and Migaku annotations earlier in this same build session."
+    },
+    {
+      "site": "Bilibili Manga",
+      "chapter_url": "https://manga.bilibili.com/mc29481/553156?from=manga_detail",
+      "result": "pass",
+      "method": "visible area",
+      "lines": 2,
+      "seconds": 0.35,
+      "sample": "别 ...那个我也听腻了 .不如你给我讲讲冰公主的故事？我倒是对她很感兴趣。",
+      "notes": "Retested extension 1.1.1: both dialogue blocks, no navigation noise."
+    },
+    {
+      "site": "Webtoon",
+      "chapter_url": "https://www.webtoons.com/en/thriller/i-dare-you/episode-1/viewer?title_no=10036&episode_no=1",
+      "result": "pass",
+      "method": "source page",
+      "lines": 2,
+      "seconds": 0.26,
+      "sample": "HE KEEPS / STARING AT ME.",
+      "notes": "English OCR explicitly selected."
+    },
+    {
+      "site": "QQ Comics",
+      "chapter_url": "https://ac.qq.com/ComicView/index/id/644371/cid/2",
+      "result": "pass",
+      "method": "source page",
+      "lines": 7,
+      "seconds": 0.24,
+      "sample": "和尚？道士？ / 奇人？神仙？",
+      "notes": "Simplified Chinese selected."
+    },
+    {
+      "site": "Baozi",
+      "chapter_url": "https://www.twbzmg.com/comic/chapter/manhuasanzijing-xingmanwenhua/0_0.html",
+      "result": "pass",
+      "method": "source page",
+      "lines": 8,
+      "seconds": 0.29,
+      "sample": "北元魏，分东西；宇文周，兴高齐。",
+      "notes": "Second page includes full prose paragraphs."
+    },
+    {
+      "site": "Mangaben",
+      "chapter_url": "https://www.manben.com/m426476/",
+      "result": "pass",
+      "method": "visible area",
+      "lines": 9,
+      "seconds": 0.36,
+      "sample": "圣祖山脉之外的世界，已经被妖兽所占领",
+      "notes": "Native Chrome capture of narration page; reader initially loaded slowly. Page number/watermark also recognized."
+    },
+    {
+      "site": "Creative Comic",
+      "chapter_url": "https://www.creative-comic.tw/zh/reader_comic/8050",
+      "result": "pass",
+      "method": "source page (canvas)",
+      "lines": 7,
+      "seconds": 0.34,
+      "sample": "萬物皆有其棲身之地。",
+      "notes": "Vertical Traditional Chinese dialogue; extension 1.1.1."
+    },
+    {
+      "site": "GlobalComix",
+      "chapter_url": "https://globalcomix.com/read/38fc7391-262a-4780-91ca-9c3eb1fe0f66/1",
+      "result": "pass",
+      "method": "source page",
+      "lines": 8,
+      "seconds": 0.31,
+      "sample": "IN NURSERY SCHOOL, I WANTED TO PUT THE BLOCK AS THE LAST BUT",
+      "notes": "Free Monica+Michael chapter; English OCR explicitly selected."
+    },
+    {
+      "site": "Manhuahao",
+      "chapter_url": "https://www.manhuahao.com/duolaameng-GzA4d/1.html",
+      "result": "pass",
+      "method": "source page (blob image)",
+      "lines": 4,
+      "seconds": 0.21,
+      "sample": "来自未来世界的机器人",
+      "notes": "Interior page after cover; blob-image extraction."
+    },
+    {
+      "site": "36mh",
+      "chapter_url": "https://www.36mh.org/manhua/502128-201080.html",
+      "result": "pass",
+      "method": "source page",
+      "lines": 2,
+      "seconds": 0.21,
+      "sample": "我，金牌财经记者 / 郑书意",
+      "notes": "Native source OCR."
+    },
+    {
+      "site": "Dumanwu",
+      "chapter_url": "https://www.dumanwu.com/GGZaGZe/XcDuQuuf.html",
+      "result": "pass",
+      "method": "source page",
+      "lines": 11,
+      "seconds": 0.35,
+      "sample": "《万界守门人》 / 响彻诸天万界",
+      "notes": "Preview chapter; decorative Latin lettering is less accurate."
+    },
+    {
+      "site": "Dongman Manhua",
+      "chapter_url": "https://www.dongmanmanhua.cn/COMEDY/hualeshenme/%E7%AC%AC1%E8%AF%9D-%E5%81%A5%E5%BF%98%E5%A4%A7%E8%B5%9B/viewer?title_no=810&episode_no=1",
+      "result": "unverified",
+      "method": "",
+      "lines": null,
+      "seconds": null,
+      "sample": "",
+      "notes": "Reader HTML loads but comic images remain 1-pixel transparency placeholders; selected reader screenshot is blank. No OCR pass."
+    },
+    {
+      "site": "Colamanga",
+      "chapter_url": "https://www.yoyomanga.com/manga-hg70402/",
+      "result": "unverified",
+      "method": "",
+      "lines": null,
+      "seconds": null,
+      "sample": "",
+      "notes": "Known chapter page again returns Cloudflare 523 Origin is unreachable."
+    },
+    {
+      "site": "Manhuagui",
+      "chapter_url": "https://www.manhuagui.com/",
+      "result": "unverified",
+      "method": "",
+      "lines": null,
+      "seconds": null,
+      "sample": "",
+      "notes": "Homepage navigation again timed out; no reader reached."
+    },
+    {
+      "site": "MangaDex",
+      "chapter_url": "https://mangadex.org/",
+      "result": "unverified",
+      "method": "",
+      "lines": null,
+      "seconds": null,
+      "sample": "",
+      "notes": "Automation browser safety policy blocked this site. No alternate access attempted; manual testing welcome."
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "unverified": 4
+  }
+}

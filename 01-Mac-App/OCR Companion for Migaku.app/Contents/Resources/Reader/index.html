@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OCR Companion for Migaku · Screen reader</title>
+<link rel="stylesheet" href="reader.css">
+<body><header><a class="brand" href="#">▣ OCR Companion <span>Screen reader</span></a><span class="badge">Experimental beta</span></header>
+<main><div class="intro"><p class="eyebrow">YOUR SCREEN, READY TO READ</p><h1>Read anywhere. Learn here.</h1><p>Capture text from a game, comic or Mac app. Read it here with Migaku in Google Chrome. Match Migaku’s study language to your OCR language.</p></div>
+<section class="reader" aria-labelledby="reader-title"><div class="toolbar"><h2 id="reader-title">Latest capture</h2><button id="pause" type="button" aria-pressed="false">Pause updates</button><span id="status" role="status">Waiting for text</span></div>
+<div id="empty"><div class="symbol" aria-hidden="true">⌘</div><h3>Your captured text will appear here</h3><p>Use the OCR menu or Option + Shift + S to select text on your screen.<br>Use Option + Shift + R to read that area again. Then look up words here with Migaku.</p><button id="sample" type="button">Preview with sample text</button></div>
+<nav class="history" aria-label="Capture history"><button id="previous" type="button" disabled>Previous capture</button><button id="next" type="button" disabled>Next capture</button><span id="capture-label">No captures yet</span><button id="latest" type="button" disabled>Back to latest</button></nav>
+<article id="text" hidden aria-label="Recognized text"></article><footer><span>Selectable text · Use your usual Migaku lookup gesture</span><button id="clear" type="button" hidden>Clear history in this tab</button></footer></section>
+<aside><strong>A local reading space</strong><p id="local-note">This preview shows the intended reader layout. Screen capture, the local connection and Migaku compatibility are not connected or verified yet.</p><p>Created by Baroni Fabio (pentestguru).</p><p>Unofficial companion app. Not affiliated with Migaku. · 1.0.0 beta 9</p></aside>
+</main><script src="reader.js"></script></body></html>

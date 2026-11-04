@@ -1,0 +1,4 @@
+Original: 77.40 seconds. Edited: 23.50 seconds.
+Kept original intervals 20.5–33.5 and 62.3–70.3 seconds at normal speed, with a 2.5-second final freeze.
+Browser tabs, address bar and bookmarks cropped out. English captions burned in. No audio track was present.
+Actual OCR and Migaku output preserved; no corrections or simulated results. Experimental beta.

@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:02,200
+Turn comic images into text you can study.
+
+2
+00:00:02,200 --> 00:00:06,500
+Click Select area, then drag around the text.
+
+3
+00:00:06,500 --> 00:00:08,500
+Apple Vision reads the selected area on your Mac.
+
+4
+00:00:08,500 --> 00:00:13,000
+Migaku adds readings and word-status markings in the same tab.
+
+5
+00:00:13,000 --> 00:00:17,000
+Keep dragging to read another speech bubble.
+
+6
+00:00:17,000 --> 00:00:21,000
+Use Migaku to look up words without leaving the comic.
+
+7
+00:00:21,000 --> 00:00:23,500
+Experimental beta • Created by Baroni Fabio (pentestguru)

@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const ctx=vm.createContext({URL});vm.runInContext(fs.readFileSync('extension/reader-core.js','utf8'),ctx);
+const core=ctx.OCRCompanionCore,v={width:1000,height:600,offsetLeft:0,offsetTop:0,scale:1,scrollY:0};
+const rect=core.selectionRect({x:900,y:550},{x:100,y:50},v);
+assert.equal(JSON.stringify(rect),JSON.stringify({left:100,top:50,right:900,bottom:550}));
+assert.equal(core.areaViewport(v),core.areaViewport({...v,scrollY:5000}),'selection is fixed to screen, not document');
+for(const key of ['width','height','offsetLeft','offsetTop','scale'])assert.notEqual(core.areaViewport(v),core.areaViewport({...v,[key]:v[key]+1}));
+assert.throws(()=>core.selectionRect({x:0,y:0},{x:15,y:100},v),/at least 16/);
+assert.throws(()=>core.selectionRect({x:NaN,y:0},{x:100,y:100},v));
+const clipped=core.selectionRect({x:-500,y:-200},{x:1500,y:800},v);assert.equal(clipped.left,0);assert.equal(clipped.right,1000);
+const pinch={...v,width:500,height:300,offsetLeft:120,offsetTop:80,scale:2};
+const clippedPinch=core.selectionRect({x:0,y:0},{x:700,y:500},pinch);assert.equal(clippedPinch.left,120);assert.equal(clippedPinch.bottom,380);
+const t=core.captureTransform(v,rect,2000,1200);assert.equal(t.pixelWidth,1600);assert.equal(t.pixelHeight,1000);
+console.log('PASS: reverse dragging, viewport clamping, minimum size, invalid input, scroll reuse, resize/zoom invalidation and Retina selected crop.');

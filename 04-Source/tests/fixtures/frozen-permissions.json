@@ -1,0 +1,21 @@
+{
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "declarativeNetRequestWithHostAccess",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "https://*.546457.xyz/*",
+    "https://*.acimg.cn/*",
+    "https://*.baozimh.com/*",
+    "https://*.bzcdn.net/*",
+    "https://*.cdndm5.com/*",
+    "https://*.dongmanmanhua.cn/*",
+    "https://*.globalcomix.com/*",
+    "https://*.kkmh.com/*",
+    "https://*.pstatic.net/*",
+    "https://*.shimolife.com/*"
+  ]
+}
