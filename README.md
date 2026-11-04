@@ -1,0 +1,1 @@
+# OCR-Companion-for-Migaku
